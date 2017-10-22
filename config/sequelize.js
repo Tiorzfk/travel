@@ -26,6 +26,9 @@ db.airplane = require('../models/airplane.js')(sequelize,Sequelize);
 db.airport = require('../models/airport.js')(sequelize,Sequelize);
 db.booking = require('../models/booking.js')(sequelize,Sequelize);
 db.passanger = require('../models/passanger.js')(sequelize,Sequelize);
+
+db.flight.belongsTo(db.airplane, {foreignKey: 'airplane_id'});
+db.airplane.belongsTo(db.airport, {foreignKey: 'airport_id'});
 // //Relations
 // db.pets.belongsTo(db.owners);
 // db.owners.hasMany(db.pets);

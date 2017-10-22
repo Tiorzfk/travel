@@ -2,12 +2,12 @@ var db = require('../config/sequelize');
 
 function Todo () {
     this.index = (req,res) => {
-      db.airplane.findAll({}).then(data => {
+      db.airplane.findAll({include: [db.airport]}).then(data => {
           return res.json({status:200,message:'success',result:data});
       })
     }
     this.detail = (req,res) => {
-      db.airplane.findById(req.params.id).then(data => {
+      db.airplane.findById(req.params.id,{include: [db.airport]}).then(data => {
           return res.json({status:200,message:'success',result:data});
       })
       .catch(error => {

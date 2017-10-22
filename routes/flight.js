@@ -7,5 +7,6 @@ router.get('/', flight.index);
 router.get('/:id', flight.detail);
 router.post('/', flight.simpan);
 router.post('/edit', flight.simpanEdit);
+router.post('/delete', flight.delete);
 
 module.exports = router;
