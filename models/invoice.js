@@ -18,8 +18,10 @@ var Schema = new Schema({
   plane_name: String,
   id_airport: Number,
   airport_name: String,
-  City: String,
+  city: String,
   State: String
+},{
+	timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' }
 });
 
 mongoose.model("Invoice", Schema);

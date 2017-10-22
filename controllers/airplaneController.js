@@ -11,7 +11,7 @@ function Todo () {
           return res.json({status:200,message:'success',result:data});
       })
       .catch(error => {
-          return res.json({status:400,message:'error',result:error});
+          return res.json({status:500,message:'error',result:error});
       })
     }
     this.simpan = (req,res) => {
@@ -19,7 +19,7 @@ function Todo () {
         return res.json({status:200,message:'success',result:data});
       })
       .catch(error => {
-          return res.json({status:400,message:'error',result:error});
+          return res.json({status:500,message:'error',result:error});
       });
     }
     this.simpanEdit = (req,res) => {
@@ -31,10 +31,10 @@ function Todo () {
         if(data[0] == 1)
           return res.json({status:200,message:'success',result:[]});
 
-        return res.json({status:400,message:'id not found',result:[]});
+        return res.json({status:500,message:'id not found',result:[]});
       })
       .catch(error => {
-          return res.json({status:400,message:'error',result:error});
+          return res.json({status:500,message:'error',result:error});
       })
     }
     this.delete = (req,res) => {
@@ -46,10 +46,10 @@ function Todo () {
           if(data == 1)
             return res.json({status:200,message:'success',result:[]});
 
-          return res.json({status:400,message:'id not found',result:[]});
+          return res.json({status:500,message:'id not found',result:[]});
       })
       .catch(error => {
-          return res.json({status:400,message:'error',result:error});
+          return res.json({status:500,message:'error',result:error});
       })
     }
 }

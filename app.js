@@ -5,6 +5,8 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose = require('./config/mongoose');
+var db = mongoose();
 var index = require('./routes/index');
 var users = require('./routes/users');
 var airplane = require('./routes/airplane');
@@ -28,7 +30,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-const version = 1.1;
+const version = '1.0.0';
 
 app.use('/', index);
 app.use(auth.cektoken);
