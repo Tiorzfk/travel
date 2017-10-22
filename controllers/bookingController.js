@@ -4,12 +4,16 @@ var invoice = require('mongoose').model('Invoice');
 function Todo () {
     this.index = (req,res) => {
       db.booking.findAll({
-          attributes:['passanger_id','flight_id','seat_number'],
+          attributes:['id_booking','passanger_id','flight_id','seat_number'],
           include: [{
             model: db.passanger,
             attributes: ['firstname','lastname','email','address','age']
           },{
-            model:db.flight
+            model:db.flight,
+            include: [{
+              model: db.airplane,
+              include: [db.airport]
+            }]
           }],
 
         }).then(data => {

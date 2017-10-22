@@ -43,7 +43,7 @@
   */
 
   /**
-   * @api {post} /api/1.0.0/airplane Simpan Airplane
+   * @api {post} /api/1.0.0/airplane Tambah Airplane
    * @apiGroup Airplane
    * @apiName SimpanAirplane
    * @apiParam {Int} airport_id id airport
