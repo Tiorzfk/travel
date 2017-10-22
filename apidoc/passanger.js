@@ -1,5 +1,9 @@
 /**
  * @api {post} /api/1.0.0/passanger/edit Update Passanger
+ * @apiHeaderExample {json} Header-Example:
+*     {
+*       "x-access-token": token
+*     }
  * @apiGroup Passanger
  * @apiName UpdatePassanger
  * @apiParam {Int} id_passanger ID Passanger that want to delete
@@ -27,6 +31,10 @@
 
  /**
   * @api {post} /api/1.0.0/passanger/delete Delete Passanger
+  * @apiHeaderExample {json} Header-Example:
+*     {
+*       "x-access-token": token
+*     }
   * @apiGroup Passanger
   * @apiName DeletePassanger
   * @apiParam {Int} id_passanger Id Passanger that want to delete
@@ -48,6 +56,10 @@
 
    /**
     * @api {get} /api/1.0.0/passanger Tampil Semua Passanger
+    * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "x-access-token": token
+ *     }
     * @apiGroup Passanger
     * @apiName GetPassanger
     * @apiSuccessExample {json} Success
@@ -68,6 +80,10 @@
 
     /**
      * @api {get} /api/1.0.0/passanger/{id} Tampil Detail Passanger
+     * @apiHeaderExample {json} Header-Example:
+  *     {
+  *       "x-access-token": token
+  *     }
      * @apiGroup Passanger
      * @apiName GetOnePassanger
      * @apiSuccessExample {json} Success

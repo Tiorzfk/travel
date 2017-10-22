@@ -3,6 +3,15 @@
     "type": "post",
     "url": "/api/1.0.0/airplane/delete",
     "title": "Delete Airplane",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Airplane",
     "name": "DeleteAirplane",
     "parameter": {
@@ -44,6 +53,15 @@
     "type": "get",
     "url": "/api/1.0.0/airplane",
     "title": "Tampil Semua Airplane",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Airplane",
     "name": "GetAirplane",
     "success": {
@@ -63,6 +81,15 @@
     "type": "get",
     "url": "/api/1.0.0/airplane/{id}",
     "title": "Tampil Detail Airplane",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Airplane",
     "name": "GetOneAirplane",
     "success": {
@@ -82,6 +109,15 @@
     "type": "post",
     "url": "/api/1.0.0/airplane",
     "title": "Tambah Airplane",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Airplane",
     "name": "SimpanAirplane",
     "parameter": {
@@ -137,6 +173,15 @@
     "type": "post",
     "url": "/api/1.0.0/airplane/edit",
     "title": "Update Airplane",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Airplane",
     "name": "UpdateAirplane",
     "parameter": {
@@ -192,6 +237,15 @@
     "type": "post",
     "url": "/api/1.0.0/airplane/delete",
     "title": "Delete Airport",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Airport",
     "name": "DeleteAirport",
     "parameter": {
@@ -233,6 +287,15 @@
     "type": "get",
     "url": "/api/1.0.0/airplane",
     "title": "Tampil Semua Airport",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Airport",
     "name": "GetAirport",
     "success": {
@@ -252,6 +315,15 @@
     "type": "get",
     "url": "/api/1.0.0/airplane/{id}",
     "title": "Tampil Detail Airport",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Airport",
     "name": "GetOneAirport",
     "success": {
@@ -271,6 +343,15 @@
     "type": "post",
     "url": "/api/1.0.0/airplane",
     "title": "Tambah Airport",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Airport",
     "name": "SimpanAirport",
     "parameter": {
@@ -326,6 +407,15 @@
     "type": "post",
     "url": "/api/1.0.0/airport/edit",
     "title": "Update Airport",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Airport",
     "name": "UpdateAirport",
     "parameter": {
@@ -547,6 +637,15 @@
     "type": "post",
     "url": "/api/1.0.0/booking/delete",
     "title": "Delete Booking",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Booking",
     "name": "DeleteBooking",
     "parameter": {
@@ -588,6 +687,15 @@
     "type": "get",
     "url": "/api/1.0.0/booking",
     "title": "Tampil Semua Booking",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Booking",
     "name": "GetBooking",
     "success": {
@@ -607,6 +715,15 @@
     "type": "get",
     "url": "/api/1.0.0/booking/{id}",
     "title": "Tampil Detail Booking",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Booking",
     "name": "GetOneBooking",
     "success": {
@@ -626,6 +743,15 @@
     "type": "post",
     "url": "/api/1.0.0/booking",
     "title": "Tambah Booking",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Booking",
     "name": "SimpanBooking",
     "parameter": {
@@ -681,6 +807,15 @@
     "type": "post",
     "url": "/api/1.0.0/booking/edit",
     "title": "Update Booking",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Booking",
     "name": "UpdateBooking",
     "parameter": {
@@ -743,6 +878,15 @@
     "type": "post",
     "url": "/api/1.0.0/flight/delete",
     "title": "Delete Flight",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Flight",
     "name": "DeleteFlight",
     "parameter": {
@@ -784,6 +928,15 @@
     "type": "get",
     "url": "/api/1.0.0/flight",
     "title": "Tampil Semua Flight",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Flight",
     "name": "GetFlight",
     "success": {
@@ -803,6 +956,15 @@
     "type": "get",
     "url": "/api/1.0.0/flight/{id}",
     "title": "Tampil Detail Flight",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Flight",
     "name": "GetOneFlight",
     "success": {
@@ -822,6 +984,15 @@
     "type": "post",
     "url": "/api/1.0.0/flight",
     "title": "Tambah Flight",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Flight",
     "name": "SimpanFlight",
     "parameter": {
@@ -912,6 +1083,15 @@
     "type": "post",
     "url": "/api/1.0.0/flight/edit",
     "title": "Update Flight",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Flight",
     "name": "UpdateFlight",
     "parameter": {
@@ -1009,6 +1189,15 @@
     "type": "get",
     "url": "/api/1.0.0/booking/invoices/list",
     "title": "Tampil Semua Invoice",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Invoice",
     "name": "GetInvoice",
     "success": {
@@ -1028,6 +1217,15 @@
     "type": "get",
     "url": "/api/1.0.0/booking/invoices/{id}",
     "title": "Tampil Invoice",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Invoice",
     "name": "GetOneInvoice",
     "success": {
@@ -1047,6 +1245,15 @@
     "type": "post",
     "url": "/api/1.0.0/passanger/delete",
     "title": "Delete Passanger",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Passanger",
     "name": "DeletePassanger",
     "parameter": {
@@ -1088,6 +1295,15 @@
     "type": "get",
     "url": "/api/1.0.0/passanger/{id}",
     "title": "Tampil Detail Passanger",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Passanger",
     "name": "GetOnePassanger",
     "success": {
@@ -1107,6 +1323,15 @@
     "type": "get",
     "url": "/api/1.0.0/passanger",
     "title": "Tampil Semua Passanger",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Passanger",
     "name": "GetPassanger",
     "success": {
@@ -1126,6 +1351,15 @@
     "type": "post",
     "url": "/api/1.0.0/passanger/edit",
     "title": "Update Passanger",
+    "header": {
+      "examples": [
+        {
+          "title": "Header-Example:",
+          "content": "{\n  \"x-access-token\": token\n}",
+          "type": "json"
+        }
+      ]
+    },
     "group": "Passanger",
     "name": "UpdatePassanger",
     "parameter": {

@@ -1,5 +1,9 @@
 /**
  * @api {post} /api/1.0.0/airport/edit Update Airport
+ * @apiHeaderExample {json} Header-Example:
+*     {
+*       "x-access-token": token
+*     }
  * @apiGroup Airport
  * @apiName UpdateAirport
  * @apiParam {String} airport_name Airport Name
@@ -23,6 +27,10 @@
 
  /**
   * @api {post} /api/1.0.0/airplane/delete Delete Airport
+  * @apiHeaderExample {json} Header-Example:
+*     {
+*       "x-access-token": token
+*     }
   * @apiGroup Airport
   * @apiName DeleteAirport
   * @apiParam {Int} id_airport Id Airport that want to delete
@@ -44,6 +52,10 @@
 
   /**
    * @api {post} /api/1.0.0/airplane Tambah Airport
+   * @apiHeaderExample {json} Header-Example:
+*     {
+*       "x-access-token": token
+*     }
    * @apiGroup Airport
    * @apiName SimpanAirport
    * @apiParam {String} airport_name Airport Name
@@ -82,6 +94,10 @@
 
    /**
     * @api {get} /api/1.0.0/airplane Tampil Semua Airport
+    * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "x-access-token": token
+ *     }
     * @apiGroup Airport
     * @apiName GetAirport
     * @apiSuccessExample {json} Success
@@ -101,6 +117,10 @@
 
     /**
      * @api {get} /api/1.0.0/airplane/{id} Tampil Detail Airport
+     * @apiHeaderExample {json} Header-Example:
+  *     {
+  *       "x-access-token": token
+  *     }
      * @apiGroup Airport
      * @apiName GetOneAirport
      * @apiSuccessExample {json} Success

@@ -1,5 +1,9 @@
 /**
  * @api {post} /api/1.0.0/booking/edit Update Booking
+ * @apiHeaderExample {json} Header-Example:
+*     {
+*       "x-access-token": token
+*     }
  * @apiGroup Booking
  * @apiName UpdateBooking
  * @apiParam {Int} id_booking ID Booking that want to edit
@@ -24,6 +28,10 @@
 
  /**
   * @api {post} /api/1.0.0/booking/delete Delete Booking
+  * @apiHeaderExample {json} Header-Example:
+*     {
+*       "x-access-token": token
+*     }
   * @apiGroup Booking
   * @apiName DeleteBooking
   * @apiParam {Int} id_booking ID Booking that want to edit
@@ -45,6 +53,10 @@
 
   /**
    * @api {post} /api/1.0.0/booking Tambah Booking
+   * @apiHeaderExample {json} Header-Example:
+*     {
+*       "x-access-token": token
+*     }
    * @apiGroup Booking
    * @apiName SimpanBooking
    * @apiParam {Int} passanger_id Passanger ID
@@ -86,6 +98,10 @@
 
    /**
     * @api {get} /api/1.0.0/booking Tampil Semua Booking
+    * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "x-access-token": token
+ *     }
     * @apiGroup Booking
     * @apiName GetBooking
     * @apiSuccessExample {json} Success
@@ -171,6 +187,10 @@
 
     /**
      * @api {get} /api/1.0.0/booking/{id} Tampil Detail Booking
+     * @apiHeaderExample {json} Header-Example:
+  *     {
+  *       "x-access-token": token
+  *     }
      * @apiGroup Booking
      * @apiName GetOneBooking
      * @apiSuccessExample {json} Success

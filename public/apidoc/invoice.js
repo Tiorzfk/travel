@@ -1,5 +1,9 @@
    /**
     * @api {get} /api/1.0.0/booking/invoices/list Tampil Semua Invoice
+    * @apiHeaderExample {json} Header-Example:
+ *     {
+ *       "x-access-token": token
+ *     }
     * @apiGroup Invoice
     * @apiName GetInvoice
     * @apiSuccessExample {json} Success
@@ -59,6 +63,10 @@
 
     /**
      * @api {get} /api/1.0.0/booking/invoices/{id} Tampil Invoice
+     * @apiHeaderExample {json} Header-Example:
+  *     {
+  *       "x-access-token": token
+  *     }
      * @apiGroup Invoice
      * @apiName GetOneInvoice
      * @apiSuccessExample {json} Success
