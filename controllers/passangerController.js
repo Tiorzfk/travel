@@ -117,7 +117,7 @@ function Todo () {
     this.delete = (req,res) => {
       db.passanger.destroy({
         where: {
-          id_passanger: req.body.id
+          id_passanger: req.body.id_passanger
         }
       }).then(data => {
           if(data == 1)
