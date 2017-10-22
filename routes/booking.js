@@ -6,5 +6,7 @@ var router = express.Router();
 router.get('/', booking.index);
 router.get('/:id', booking.detail);
 router.post('/', booking.simpan);
+router.post('/delete', booking.delete);
+router.post('/edit', booking.simpanEdit);
 
 module.exports = router;
