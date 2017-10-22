@@ -1,7 +1,7 @@
 var jwt = require('jsonwebtoken');
 module.exports.cektoken=function(req, res, next) {
 	var token = req.body.token || req.query.token || req.headers['x-access-token'];
-    if (req.path==='/api/1.1/passanger/register') {
+    if (req.path==='/api/1.1/passanger/register' || req.path==='/api/1.1/passanger/login') {
         next();
     }else{
     	// decode token

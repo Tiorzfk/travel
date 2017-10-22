@@ -43,7 +43,7 @@ function Todo () {
       }).then(data => {
           if(!data) {
             req.body.password = bcrypt.hashSync(req.body.password, 10);
-            req.body['token'] = jwt.sign(req.body, 'AsyI8Ngw3OpzZ');
+            req.body['token'] = jwt.sign(req.body, 'AsyI8Ngw3OpzZ', { expiresIn: '24h' });
             db.passanger.create(req.body).then(data => {
               var mailOptions = {
                 from: 'tiorezafebrian@gmail.com',
