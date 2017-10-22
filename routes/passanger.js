@@ -10,6 +10,6 @@ router.post('/delete', passanger.delete);
 
 router.post('/login', passanger.login);
 router.post('/register', passanger.register);
-router.get('/confirm/:token', passanger.confirm);
+router.get('/confirm/email', passanger.confirm);
 
 module.exports = router;

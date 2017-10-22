@@ -49,7 +49,7 @@ function Todo () {
                 from: 'tiorezafebrian@gmail.com',
                 to: data.email,
                 subject: 'Travel - Confirmation Email',
-                html: '<p>Click link bellow to confirm your email address</p><p><a href="http://localhost:3000/api/1.1/passanger/confirm/'+data.token+'">link<a></p>'
+                html: '<p>Click link bellow to confirm your email address</p><p><a href="http://localhost:3000/api/1.1/passanger/confirm/email?token='+data.token+'">link<a></p>'
               };
 
               transport.sendMail(mailOptions, function(error, info){
@@ -72,13 +72,13 @@ function Todo () {
 
     }
     this.confirm = (req,res) => {
-      jwt.verify(req.params.token, 'AsyI8Ngw3OpzZ', function(err, decoded) {
+      jwt.verify(req.query.token, 'AsyI8Ngw3OpzZ', function(err, decoded) {
         if(err)
           return res.json({status:400,message:'error',result:err});
 
           db.passanger.update({status:"1"}, {
               where: {
-                token: req.params.token
+                token: req.query.token
               }
           }).then(data => {
               if(data[0] == 1)

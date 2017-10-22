@@ -12,6 +12,7 @@ var airport = require('./routes/airport');
 var booking = require('./routes/booking');
 var flight = require('./routes/flight');
 var passanger = require('./routes/passanger');
+var auth = require('./config/auth');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 const version = 1.1;
 
 app.use('/', index);
+app.use(auth.cektoken);
 app.use('/api/'+version+'/airplane', airplane);
 app.use('/api/'+version+'/airport', airport);
 app.use('/api/'+version+'/booking', booking);
