@@ -39,7 +39,7 @@ module.exports = (sequelize, DataTypes) => {
     age: {
       type: DataTypes.INTEGER,
       validate : {
-        isNumeric: {args:true,msg:'Age is not valid'}
+        isNumeric: {args:true,msg:'Age must be number'}
       }
     },
     status: {

@@ -8,13 +8,23 @@ module.exports = (sequelize, DataTypes) => {
       autoIncrement: true
     },
     airport_id: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      validate : {
+        notEmpty: {args:true,msg:'Id Airport cannot be null'}
+      }
     },
     plane_name: {
-      type: DataTypes.STRING
+      type: DataTypes.STRING,
+      validate : {
+        notEmpty: {args:true,msg:'Airplane Name cannot be null'}
+      }
     },
     total_seat: {
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      validate : {
+        notEmpty: {args:true,msg:'Total Seat cannot be null'},
+        isNumeric: {args:true,msg:'Total Seat must be number'}
+      }
     }
   }, {
     paranoid: true,
